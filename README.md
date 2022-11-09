@@ -17,6 +17,9 @@
 |   4 | Hour        | The Houre when vote is send   |
 |   5 | City        | The city of the voter         |
 
+[![Binder](https://mybinder.org/badge_logo.svg)]
+(https://mybinder.org/v2/gh/HarounTheGreat/Voting-System/ccec9ae961324f0b6b454087d56ed002d3e2a3c5?filepath=lab%2Ftree%2Findex.ipynb)
+
 ---
 
 Binder here
