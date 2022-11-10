@@ -17,8 +17,6 @@
 |   4 | Hour        | The Houre when vote is send            |
 |   5 | City        | The city of the voter                  |
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/HarounTheGreat/Voting-System/main?filepath=index.ipynb)
-
 ---
 
 <h2>Please Click on the button below  </h1>
@@ -26,6 +24,7 @@
 **See how we manipulating and creating data**
 
 :point_down:
+
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/HarounTheGreat/Voting-System/main?filepath=index.ipynb)
 
 ## Data visualization :loop: using Power Bi :two: :
