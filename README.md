@@ -39,4 +39,10 @@ Automate Power to Send PDF Report every hour :clock10:
 
 ![img](images/Picture2.png)
 
-we depelop plateform to
+we develop a voting platform using Django use this command to see it
+
+```python
+pyhton manage.py runserver
+```
+
+![img](images/data.gif)
