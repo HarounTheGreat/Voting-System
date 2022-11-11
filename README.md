@@ -46,8 +46,10 @@ Automate Power to Send PDF Report every hour :clock10:
 
 we develop a voting platform using Django use this command to see it
 
+in the file Django 
+
 ```python
 pyhton manage.py runserver
 ```
 
-![img](images/data.gif)
+<!-- ![img](images/data.gif) -->
