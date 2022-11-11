@@ -1,0 +1,7 @@
+{% extends 'epoll/layout.html' %} {%block content %}
+<div class="jumbotron" id="dash">
+  <h2>{{request.user.get_full_name }},مرحبا</h2>
+  <h3><a href="{% url 'position'%}">إضغط هنا للتصويت</a></h3>
+  <h3><a href="{% url 'result' %}">إضغط هنا لمعرفة النتيجة</a></h3>
+</div>
+{% endblock %}

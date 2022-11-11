@@ -1,0 +1,36 @@
+{% extends "epoll/layout.html" %} {% block content %}
+
+<div class="jumbotron">
+  {% if message %}
+  <div class="alert alert-danger" role="alert">{{ message }}</div>
+  {% endif %}
+
+  <h2>تسجيل دخول</h2>
+  <form action="." method="POST">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="username">اسم المستخدم:</label>
+      <input
+        type="text"
+        name="username"
+        class="form-control"
+        id="username"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="password">كلمة المرور:</label>
+      <input
+        type="password"
+        name="password"
+        class="form-control"
+        id="password"
+        required
+      />
+    </div>
+
+    <input type="submit" class="btn btn-primary btn-sm" value="تسجيل الدخول" />
+  </form>
+</div>
+
+{% endblock %}

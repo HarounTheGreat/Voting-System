@@ -1,0 +1,331 @@
+{% extends "epoll/layout.html"%} Electronic Ballot System {% block content %}
+
+<div class="jumbotron" id="home">
+  {% if messages %} {% for message in messages %}
+  <div class="alert alert-success" role="alert">{{ message }}</div>
+  {% endfor %} {% endif %}
+  <h1>وقيت باش تقيد</h1>
+  <h3>صوتك يهمنا</h3>
+</div>
+{% load static %}
+<!-- Navbar Start -->
+<div class="container-fluid p-0">
+  <nav
+    class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5"
+  >
+    <link href="{% static ''%}epoll/css/style.css" rel="stylesheet" />
+    <button
+      type="button"
+      class="navbar-toggler"
+      data-toggle="collapse"
+      data-target="#navbarCollapse"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- <div
+      class="collapse navbar-collapse justify-content-between px-lg-3"
+      id="navbarCollapse"
+    >
+      <a href="" class="btn btn-primary py-2 px-4 d-none d-lg-block"
+        >تسجيل الدخول</a
+      >
+      <a href="" class="btn btn-primary py-2 px-4 d-none d-lg-block">تسجيل</a>
+      <div class="navbar-nav mx-auto py-0">
+        <a href="contact.html" class="nav-item nav-link">للإتصال</a>
+        <a href="#statics" class="nav-item nav-link">إحصائيات</a>
+        <a href="#vote" class="nav-item nav-link">تصويت</a>
+        <a href="about.html" class="nav-item nav-link">معلومات عنا</a>
+        <a href="index.html" class="nav-item nav-link active"
+          >الصفحة الرئيسية</a
+        >
+      </div>
+    </div> -->
+    <a href="index.html" class="navbar-brand ml-lg-3">
+      <div class="redi"></div>
+    </a>
+  </nav>
+</div>
+<!-- Navbar End -->
+
+<!-- Header Start -->
+<div
+  class="jumbotron jumbotron-fluid position-relative overlay-bottom"
+  style="margin-bottom: 90px"
+>
+  <!-- <div class="container text-center my-5 py-5">
+    <h1 class="text-white mt-4 mb-4">ابحث هنا</h1>
+    <h1 class="text-white display-1 mb-5">وق باش تقيد</h1>
+    <div class="mx-auto mb-5" style="width: 100%; max-width: 600px">
+      <div class="input-group">
+        <div class="input-group-append">
+          <button class="btn btn-secondary px-4 px-lg-5">ابحث</button>
+        </div>
+        <input
+          type="text"
+          class="form-control border-light"
+          style="padding: 30px 25px"
+          placeholder="                                                                            ابحث هنا"
+        />
+      </div>
+    </div>
+  </div>
+</div> -->
+
+  <!-- Feature Start -->
+  <div class="container-fluid bg-image" style="margin: 90px 0">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 my-5 pt-5 pb-lg-5">
+          <div class="section-title position-relative mb-4">
+            <h1 class="display-4">: التفاصيل</h1>
+          </div>
+          <p class="mb-4 pb-2 align">
+            الهيئة العليا المستقلة للانتخابات هيئة عمومية مستقلة ودائمة تتمتع
+            بالشخصية المعنوية والاستقلال الإداري والمالي مقرها تونس العاصمة
+          </p>
+          <div class="row pt-3 mx-0">
+            <div class="col-3 px-0">
+              <div class="bg-success text-center p-4">
+                <h1 class="text-white size" data-toggle="counter-up">5</h1>
+                <h6 class="text-uppercase text-white">عدد المرشحين</h6>
+              </div>
+            </div>
+            <div class="col-3 px-0">
+              <div class="bg-primary text-center p-4">
+                <h1 class="text-white size" data-toggle="counter-up">700000</h1>
+                <h6 class="text-uppercase text-white">عدد الناخبين</h6>
+              </div>
+            </div>
+            <div class="col-3 px-0">
+              <div class="bg-secondary text-center p-4">
+                <h1 class="text-white size" data-toggle="counter-up">
+                  1000000
+                </h1>
+                <h6 class="text-uppercase text-white">عدد المسجلين</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5" style="min-height: 500px">
+          <div class="position-relative h-100">
+            <img
+              class="position-absolute w-100 h-100"
+              src="{% static ''%}epoll/img/image3.jpg"
+              style="object-fit: cover"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Feature Start -->
+  <div class="row">
+    <div class="column">
+      <img
+        src="{% static ''%}epoll/img/فاروق بوعسكر القايدي.jpg"
+        alt="Snow"
+        style="width: 100%"
+      />
+      
+<a class="btn btn-primary">تحميل</a>
+    </div>
+
+      <img
+        class="column"
+        src="{% static ''%}epoll/img/ماهر الجديدي.jpg"
+        alt="ماهر الجديدي"
+        style="width: 100%"
+      />
+      <a class="btn btn-primary">تحميل</a>
+
+      <img
+        class="column"
+        src="{% static ''%}epoll/img/محمد التليلي منصري.jpg"
+        alt="محمد التليلي منصري"
+        style="width: 100%"
+      />
+      <a class="btn btn-primary">تحميل</a>
+
+      <img
+        class="column"
+        src="{% static ''%}epoll/img/محمود الواعر.jpg"
+        alt="محمود الواعر"
+        style="width: 100%"
+      />
+      <a class="btn btn-primary">تحميل</a>
+
+      <img
+        class="column"
+        src="{% static ''%}epoll/img/محمد نوفل فريخة.jpg"
+        alt=" محمد نوفل فريخة"
+        style="width: 100%"
+      />
+      <a class="btn btn-primary "href="/cv.pdf" >تحميل</a>
+
+
+      <!-- Testimonial Start -->
+      <div class="container-fluid bg-image py-5" style="margin: 90px 0">
+        <div class="container py-5">
+          <div class="row align-items-center">
+            <div class="col-lg-7">
+              <div class="owl-carousel testimonial-carousel">
+                <div class="bg-white p-5">
+                  <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                  <p class="align">
+                    احصائيّات قبول الترشحات لانتخاب أعضاء مجلس نواب الشعب 2022
+                    في يومها الحادي عشر والأخير بتاريخ الخميس 27 أكتوبر 2022 بعد
+                    غلق المكاتب الرئيسية للترشحات على الساعة السادسة مساء
+                  </p>
+                  <div class="d-flex flex-shrink-0 align-items-center mt-4">
+                    <img
+                      class="img-fluid mr-4"
+                      src="{% static ''%}epoll/img/logo.png"
+                      alt="image"
+                      style="width: 70%"
+                    />
+
+                    <h5>في 2022/10/28</h5>
+                  </div>
+                </div>
+                <div class="bg-white p-5">
+                  <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                  <p class="align">
+                    مكاتب تحيين التسجيل القارة للفترة الثانية الاستثنائية
+                    للتحيين من 28 أكتوبر 2022 إلى غاية 20 نوفمبر
+                  </p>
+                  <div class="d-flex flex-shrink-0 align-items-center mt-4">
+                    <img
+                      class="img-fluid mr-4"
+                      src="{% static ''%}epoll/img/logo.png"
+                      alt="image"
+                      style="width: 70%"
+                    />
+
+                    <h5>في 2022/10/27</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 mb-5 mb-lg-0">
+              <div class="section-title position-relative mb-4">
+                <h1 class="align display-4">: اخر المستجدات</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Testimonial Start -->
+
+      <!-- Contact Start -->
+      <div class="container-fluid py-5">
+        <div class="container py-5">
+          <div class="row align-items-center">
+            <div class="col-lg-5 mb-5 mb-lg-0">
+              <div
+                class="bg-light d-flex flex-column justify-content-center px-5"
+                style="height: 450px"
+              >
+                <div class="d-flex align-items-center mb-5">
+                  <div class="btn-icon bg-primary mr-4">
+                    <i class="fa fa-2x fa-map-marker-alt text-white"></i>
+                  </div>
+                  <div class="mt-n1">
+                    <h4>موقعنا</h4>
+                    <p class="m-0">
+                      نهج جزيرة سردينيا - عدد 05 - حدائق البحيرة -1053 تونس
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center mb-5">
+                  <div class="btn-icon bg-secondary mr-4">
+                    <i class="fa fa-2x fa-phone-alt text-white"></i>
+                  </div>
+                  <div class="mt-n1">
+                    <h4>اتصل بنا</h4>
+                    <p class="m-0">(+216) 93 234 428</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <div class="btn-icon bg-warning mr-4">
+                    <i class="fa fa-2x fa-envelope text-white"></i>
+                  </div>
+                  <div class="mt-n1">
+                    <h4>ارسل لنا عبر البريد الإلكتروني</h4>
+                    <p class="m-0">harounbouriga99@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="section-title position-relative mb-4">
+                <h6
+                  class="d-inline-block position-relative text-secondary text-uppercase pb-2"
+                >
+                  تحتاج مساعدة؟
+                </h6>
+                <h1 class="display-4">أرسل لنا رسالة</h1>
+              </div>
+              <div class="contact-form">
+                <form>
+                  <div class="row">
+                    <div class="col-6 form-group">
+                      <input
+                        type="text"
+                        class="form-control border-top-0 border-right-0 border-left-0 p-0"
+                        placeholder="اسم"
+                        required="required"
+                      />
+                    </div>
+                    <div class="col-6 form-group">
+                      <input
+                        type="email"
+                        class="form-control border-top-0 border-right-0 border-left-0 p-0"
+                        placeholder="البريد الإلكتروني"
+                        required="required"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control border-top-0 border-right-0 border-left-0 p-0"
+                      placeholder="مسند"
+                      required="required"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <textarea
+                      class="form-control border-top-0 border-right-0 border-left-0 p-0"
+                      rows="5"
+                      placeholder="رسالة"
+                      required="required"
+                    ></textarea>
+                  </div>
+                  <div>
+                    <button class="btn btn-primary py-3 px-5" type="submit">
+                      إرسال
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Contact End -->
+
+      <!-- JavaScript Libraries -->
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+      <script src="{% static ''%}epoll/lib/easing/easing.min.js"></script>
+      <script src="{% static ''%}epoll/lib/waypoints/waypoints.min.js"></script>
+      <script src="{% static ''%}epoll/lib/counterup/counterup.min.js"></script>
+      <script src="{% static ''%}epoll/lib/owlcarousel/owl.carousel.min.js"></script>
+
+      <!-- Template Javascript -->
+      <script src="{% static ''%}epoll/epoll/js/main.js"></script>
+      {% endblock %}
+    </div>
+  </div>
+</div>
