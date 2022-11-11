@@ -44,12 +44,19 @@ Automate Power to Send PDF Report every hour :clock10:
 
 ![img](images/Picture2.png)
 
-we develop a voting platform using Django use this command to see it
+we develop a voting platform using Django Open Django file and use this command to see it
 
-in the file Django 
 
 ```python
 pyhton manage.py runserver
 ```
 
 <!-- ![img](images/data.gif) -->
+
+
+**conclusion**
+Analysing Data Produced by Voters can help us to discover mony information to see what people want.
+
+What about the vast amounts of data on social media? This link will take you to my GitHub Repositories if you want to learn more about opening mining and how to extract and analyze comments on social media.
+
+[click here](https://github.com/HarounTheGreat/Data-Analytics)
