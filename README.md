@@ -33,6 +33,11 @@
 
 ![img](images/Resultat.jpg)
 
+
+![img](images/2.gif)
+
+![img](images/3.gif)
+
 Automate Power to Send PDF Report every hour :clock10:
 
 ![img](images/capture.png)
