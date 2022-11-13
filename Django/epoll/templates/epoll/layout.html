@@ -46,7 +46,7 @@
         <div class="navbar-nav ml-auto">
           {% if request.user.is_authenticated%}
             <a class="nav-item nav-link" href="{% url 'dashboard' %}">اللوحة الرئيسية</a>
-            <a class="nav-item nav-link" href="{% url 'editProfile' %}">تعديل الملف الشخصيfile</a>
+            <a class="nav-item nav-link" href="{% url 'editProfile' %}">تعديل الملف الشخصي </a>
             <a class="nav-item nav-link" href="{% url 'changePassword'%}">غير كلمة السر</a>
             <a class="nav-item nav-link" href="{% url 'logout' %}">تسجيل خروج</a>
           {% else %}
