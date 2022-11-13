@@ -16,6 +16,7 @@
 |   3 | DateByY_M_D | Date of Vote : Year-Month-Day          |
 |   4 | Hour        | The Houre when vote is send            |
 |   5 | City        | The city of the voter                  |
+|  6  | Gender      | Gender of the voter                    |
 
 ---
 
