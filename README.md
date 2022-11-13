@@ -51,7 +51,7 @@ Open Django file and use this command to see it
 
 
 ```python
-pyhton manage.py runserver
+python manage.py runserver
 ```
 
 <!-- ![img](images/data.gif) -->
