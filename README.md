@@ -66,5 +66,6 @@ What about the vast amounts of data on social media? This link will take you to 
 
 [click here](https://github.com/HarounTheGreat/Data-Analytics)
 
+<h1> here is a demo video about the voting system platform </h1>
 
-[click here](https://github.com/HarounTheGreat/Voting-System/blob/9bc0fe0d6dfea8e1a61eae138fd7f95f5bb69d5d/encrypts/index.ipynb)
+[click here](https://drive.google.com/file/d/1aP7CK2d3qGBdrupV53I9Q-kbqPeU-u3h/view?usp=share_link)
